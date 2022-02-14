@@ -1,0 +1,57 @@
+{% extends "base.html" %} {% block main %} 
+<body>
+    <div class="everything">
+  <div class="profile-card">
+
+    <div class="card-header">
+
+      <div class="pic">
+        <img src="{{ url_for('static', filename='displaypic/GamerTruce.jpg')}}">
+      </div>
+
+
+      <div class="name">Maleik Miller</div>
+
+      <div class="handle">@intensedesignz</div>
+
+      <div class="Location">Linstead, Jamaica</div>
+
+      <div class="joined">Joined {{ join_date }}</div>
+      
+    </div>
+
+
+    <div class="card-footer">
+
+    <p>Illustrator and Graphic Designer based in Linstead Jamaica 
+       who loves Traditional and Digital Art. I believe what limits 
+       you is lack of imagination. "Do Good, Die Great."
+    </p>
+
+
+
+      <div class="profile-stat">
+        <div class="item">
+          <span>40</span>
+          Posts
+        </div>
+        
+        <div class="item">
+          <span>698</span>
+          Following
+        </div>
+       
+        <div class="item">
+          <span>671</span>
+          Followers
+        </div>
+
+      </div>
+      <a href="#" class="follow-button">Follow</a>
+    </div>
+
+
+  </div>
+  </div>
+</body>
+{% endblock %}
